@@ -1,0 +1,60 @@
+<?php
+    include $_SERVER['DOCUMENT_ROOT'] . '/asrama/connect.php';
+    include "../template/head.php";
+?>
+<?php
+    include "../template/sidebar.php";
+?>
+<?php
+    include "../template/top-bar.php";
+
+
+if (isset($_POST['tambah_obat'])) {
+    $nama = $_POST['nama_obat'];
+    $kategori = $_POST['kategori_obat'];
+    $harga = $_POST['harga'];
+    $stok = $_POST['stok'];
+    $deskripsi = $_POST['deskripsi'];
+    
+    $sql = "INSERT INTO obat (nama_obat, kategori_obat, harga, stok, deskripsi) 
+            VALUES ('$nama', '$kategori', '$harga', '$stok', '$deskripsi')";
+    mysqli_query($koneksi, $sql);
+    header("Location: obat.php");
+}
+?>
+
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Tambah Data Obat</h1>
+        <form method="POST">
+            <div class="mb-3">
+                <label>Nama Obat</label>
+                <input type="text" name="nama_obat" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label>Kategori</label>
+                <input type="text" name="kategori_obat" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label>Harga</label>
+                <input type="number" name="harga" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label>Stok</label>
+                <input type="number" name="stok" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label>Deskripsi</label>
+                <textarea name="deskripsi" class="form-control"></textarea>
+            </div>
+            <button type="submit" name="tambah_obat" class="btn btn-primary">Tambah</button>
+            <a href="obat.php" class="btn btn-secondary">Kembali</a>
+        </form>
+    </div>
+</body>
+
+</html>
+<?php
+    include "../template/script.php"
+?>

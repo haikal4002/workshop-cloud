@@ -1,0 +1,220 @@
+/* Struktur dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Memastikan tinggi minimal 100% viewport */
+    display: flex;
+    flex-direction: column; /* Mengatur arah vertikal */
+}
+
+/* Header */
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo di kiri dan h1 di tengah */
+}
+
+.logo img {
+    width: 20%; /* Sesuaikan ukuran logo */
+    height: auto;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    flex-grow: 1; /* Agar h1 berada di tengah */
+    text-align: center; /* Menjaga h1 agar berada di tengah */
+}
+
+h1.text-center {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4e9ff; /* Light blue for hover */
+}
+
+.navmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navmenu li {
+    margin: 0 10px;
+}
+
+.logout-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.logout-link {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logout-icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.logout-text {
+    font-size: 1rem;
+}
+
+/* Konten utama */
+main {
+    flex: 1; /* Memastikan bagian konten utama mengisi sisa ruang */
+    padding: 20px;
+}
+
+/* Profile */
+.profile-card {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.profile-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.profile-header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.profile-header p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.profile-body {
+    padding: 20px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.profile-body p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.profile-body .btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.profile-body .btn:hover {
+    background-color: #3b78c1;
+}
+
+.kamar:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.07);
+}
+
+/* Footer */
+footer {
+    background-color: #3b78c1;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Memastikan footer tetap berada di bawah */
+}
+#gotop{
+position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    display: none; 
+    z-index: 1000;
+     
+}
+
+#gotop a{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.navmenu ul li a:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1F509A;
+}
+#jml_warga{
+    display: none;
+}
+
+#terisi {
+    background-color: #A1EEBD;
+    width: 40px;
+    height: 20px;
+}
+
+#kosong {
+    background-color: #BCCCDC;
+    width: 40px;
+    height: 20px;
+}
+
+.denah_kamar{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
