@@ -80,7 +80,7 @@ mysql -u root -p -i asrama < asrama (5).sql
 ```sh
 cd /etc/apache2/sites-available
 a2dissite 000-default.conf
-cp 000-default.conf asrama.com.conf
+sudo cp 000-default.conf asrama.com.conf
 ```
 ### 6️⃣ Edit virtualhost Apache
 Edit file siakad.com using nano or vim, copy and replace down below
