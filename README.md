@@ -18,7 +18,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 ### 2️⃣ Install Dependencies
 ```sh
-sudo apt install apache2 php php8.1-mysql php-xml php-zip php-curl php-mbstring php-gd mariadb git -y
+sudo apt install apache2 php php8.2-mysql php-xml php-zip php-curl php-mbstring php-gd mariadb-server git -y
 ```
 ### 3️⃣ Start and enable apache
 ```sh
