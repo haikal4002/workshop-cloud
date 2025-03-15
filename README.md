@@ -1,6 +1,6 @@
-# asrama
+# Asrama
 
-## Deploy Project Siakad
+## Deploy Project Asrama
 
 ## 🚀 Introduction
 This repository contains the source code for Project Sistem Informasi akademik - a web application built using html, css, javascipt, and php. This guide will walk you through the steps to deploy the application on your linux machine.
@@ -55,8 +55,8 @@ mysql_secure_installation
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/haikal23095/project-paw-siakad
-cd project-paw-siakad
+https://github.com/haikal4002/workshop-cloud
+cd workshop-cloud
 ```
 
 ### 2️⃣ Login to database
@@ -67,27 +67,27 @@ Enter password: [Your_Password]
 
 ### 3️⃣ Create Database
 ```sh
-CREATE DATABASE siakad;
+CREATE DATABASE asrama;
 QUIT;
 ```
 
 ### 4️⃣ Import file sql ke Database
 ```sh
-mysql -u root -p -i siakad < siakad.sql
+mysql -u root -p -i asrama < asrama (5).sql
 ```
 
 ### 5️⃣ Deploy to Hosting Provider
 ```sh
 cd /etc/apache2/sites-available
 a2dissite 000-default.conf
-cp 000-default.conf siakad.com.conf
+cp 000-default.conf asrama.com.conf
 ```
 ### 6️⃣ Edit virtualhost Apache
 Edit file siakad.com using nano or vim, copy and replace down below
 ```sh
 VirtualHost *:80>
         ServerAdmin webmaster@localhost
-        DocumentRoot /var/www/siakad
+        DocumentRoot /var/www/asrama
         DirectoryIndex loginpage.php
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -97,7 +97,7 @@ VirtualHost *:80>
 ```
 ### Exit and active the virtualhost
 ```sh
-sudo a2ensite siakad.com
+sudo a2ensite asrama.com.conf
 ```
 ### Restart apahce2
 ```sh
@@ -106,9 +106,9 @@ systemctl restart apache2
 
 ### Buat directory dan copy contain in code directoy 
 ```sh
-sudo mkdir /var/www/siakad && sudo cp -r ~/project-paw-siakad/. /var/www/siakad/ 
+sudo mkdir /var/www/asrama && sudo cp -r ~/workshop-cloud/. /var/www/asrama/ 
 ```
 
-Goto Your Browser type http://YOUR_IP_ADDRESS
+*Goto Your Browser type http://YOUR_IP_ADDRESS*
 
 ### ✅ Finish 🔥
