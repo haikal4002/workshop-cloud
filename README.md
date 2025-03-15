@@ -101,7 +101,7 @@ sudo a2ensite asrama.com.conf
 ```
 ### Restart apahce2
 ```sh
-systemctl restart apache2
+sudo systemctl restart apache2
 ```
 
 ### Buat directory dan copy contain in code directoy 
