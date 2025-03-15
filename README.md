@@ -35,7 +35,7 @@ Check info php on your browser =>  type http://[your_ip_address]/info.php
 
 ### 5️⃣ Configure mysql secure instalation
 ```sh
-mysql_secure_installation
+sudo mysql_secure_installation
 ```
 ### Enter the answer like below
 - Enter current password for root (enter for none): 
