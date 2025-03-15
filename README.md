@@ -55,7 +55,7 @@ sudo mysql_secure_installation
 
 ### 1️⃣ Clone the Repository
 ```sh
-https://github.com/haikal4002/workshop-cloud
+git clone https://github.com/haikal4002/workshop-cloud
 cd workshop-cloud
 ```
 
