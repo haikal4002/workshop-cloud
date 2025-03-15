@@ -18,7 +18,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 ### 2️⃣ Install Dependencies
 ```sh
-sudo apt install apache2 php php8.2-mysql php-xml php-zip php-curl php-mbstring php-gd mariadb-server git -y
+sudo apt install apache2 php php8.2-mysql php-mysql php-xml php-zip php-curl php-mbstring php-gd mariadb-server git -y
 ```
 ### 3️⃣ Start and enable apache
 ```sh
@@ -73,7 +73,7 @@ QUIT;
 
 ### 4️⃣ Import file sql ke Database
 ```sh
-mysql -u root -p -i asrama < asrama (5).sql
+mysql -u root -p -i asrama < 'asrama (5).sql'
 ```
 
 ### 5️⃣ Deploy to Hosting Provider
@@ -88,7 +88,7 @@ Edit file siakad.com using nano or vim, copy and replace down below
 VirtualHost *:80>
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/asrama
-        DirectoryIndex loginpage.php
+        DirectoryIndex login_warga.php
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
