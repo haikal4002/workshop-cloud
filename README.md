@@ -3,7 +3,7 @@
 ## Deploy Project Asrama
 
 ## 🚀 Introduction
-This repository contains the source code for Project Sistem Informasi akademik - a web application built using html, css, javascipt, and php. This guide will walk you through the steps to deploy the application on your linux machine.
+This repository contains the source code for Project Asrama UTM - a web application built using html, css, javascipt, and php. This guide will walk you through the steps to deploy the application on your linux machine.
 
 ## 📌 Prerequisites
 Before deploying, make sure you have:
